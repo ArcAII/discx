@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover X | F\EXIBILITY</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+
+    <meta name="description" content="New Gen of AI"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="googlebot" content="index, follow"/>
+    <link rel="alternate" hrefLang="en-US" href="https://arcaii.github.io/flexibility/"/>
+    <meta property="og:title" content="F\EXIBILITY"/>
+    <meta property="og:description" content="We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems. Building safe and beneficial AGI is our mission."/>
+    <meta property="og:locale" content="en-US"/>
+    <meta property="og:image" content="https://images.playground.com/e7c04e0bb13b4c3aaf763763ade6565c.jpeg"/>
+
+
+    <meta property="og:image:width" content="1600"/>
+    <meta property="og:image:height" content="900"/>
+    <meta property="og:image:alt" content="Abstract art featuring a striking contrast of teal and pink brushstrokes on an orange canvas, overlaid with the white F\EXIBILITY logo."/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@Flexibility"/>
+    <meta name="twitter:title" content="F\EXIBILITY"/>
+    <meta name="twitter:description" content="We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems. Building safe and beneficial AGI is our mission."/>
+    <meta name="twitter:image" content="https://images.playground.com/e7c04e0bb13b4c3aaf763763ade6565c.jpeg"/>
+
+    <meta name="twitter:image:width" content="1600"/>
+    <meta name="twitter:image:height" content="900"/>
+    <link rel="icon" href="fav.ico"/>
+    <style>
+        @font-face {
+            font-family: 'GrokFont';
+            src: url('https://yourfonturl.com/grok-font.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #050505;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+            position: relative; /* Added */
+        }
+        .nav {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+        }
+        .nav img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .nav a {
+            margin-right: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 20rem;
+            letter-spacing: 1rem;
+            color: #050505;
+            position: relative;
+            font-family: 'GrokFont', sans-serif;
+            text-shadow:
+                -1px -1px 0 #171718,
+                1px -1px 0 #171718,
+                -1px 1px 0 #171718,
+                1px 1px 0 #171718;
+            transition: text-shadow 0.3s;
+            margin-top: 100px;
+        }
+        h1.hovered {
+            text-shadow:
+                -1px -1px 0 #171718,
+                1px -1px 0 #171718,
+                -1px 1px 0 #171718,
+                1px 1px 0 #171718;
+        }
+        .content {
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .sign-in-button {
+            background-color: #ddd;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .sign-in-button:hover {
+            background-color: #ccc;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            color: #bbb;
+        }
+        .footer a {
+            color: #bbb;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #171718;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .bottom-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        .bottom-bar a:hover {
+            background-color: #333;
+        }
+        .news-section {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .news-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .news-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .news-card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            color: #bbb;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .news-card:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+        
+        .news-card img {
+            width: 100%;
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensures the images cover the area without distortion */
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .news-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .news-card p {
+            font-size: 0.9rem;
+            text-align: center;
+            color: #bbb;
+        }
+        
+        .news-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: none;
+            z-index: 1000;
+            width: 90%; /* Increased width to cover more of the screen */
+            max-height: 90%; /* Increased height to cover more of the screen */
+            overflow-y: auto;
+        }
+        
+        .news-popup img {
+            width: 100%;
+            height: 300px; /* Set a fixed height for the image */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .news-popup h1 {
+            font-size: 3rem; /* Increased font size */
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .news-popup p {
+            font-size: 1rem;
+            text-align: left;
+            color: #bbb;
+        }
+        
+        .news-popup .close-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px; /* Added space between content and button */
+            display: block;
+            width: fit-content;
+            margin-left: auto; /* Aligns the button to the right */
+        }
+        
+        .news-popup .close-btn:hover {
+            background-color: #555;
+        }
+        
+        /* Added overlay style */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+            z-index: 999; /* Ensure the overlay is above other content */
+            display: none;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#"></a>
+        <img src="ai.png" alt="Logo">
+        <span style="font-size: 1.5rem; font-family: 'GrokFont', sans-serif;">F\EXIBILITY</span>
+        <a href="#"></a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+    </div>
+    <h1 id="title">DISCX</h1>
+    <div class="content">
+        <p>Understand the Universe</p>
+    </div>
+   
+    <div class="news-section">
+       
+        <div class="news-banner" onclick="showPopup('Rishi Sunak Lost UK Election', 'https://cdn.bdnews24.com/bdnews24/media/english/imgAll/2024July/niko-omilana-050724-01-1720179915.jpg', 'According to the election results, the Labour Party is expected to win 410 seats, while Sunak Conservative Party is projected to win only 131 seats - the worst performance in the partys history.  Sunak has taken responsibility for the Conservatives loss and said he has called Keir Starmer to congratulate him. Sunak stated that Today, power will change hands in a peaceful and orderly manner, with goodwill on all sides. That is something that should give us all confidence in our country stability and future. He also expressed his gratitude to his constituents in Richmond and North Allerton, where he was re-elected as the local Member of Parliament. The election results represent a significant shift in British politics, with the Labour Party securing its largest victory since 1997 under Tony Blair.  Keir Starmer has promised a decade of national renewal after years of austerity, Brexit upheaval, and a cost-of-living crisis. ')">
+            <img src="https://cdn.bdnews24.com/bdnews24/media/english/imgAll/2024July/niko-omilana-050724-01-1720179915.jpg" alt="Rishi Sunak Lost UK Election">
+            <h2>Rishi Sunak Lost UK Election</h2>
+            <p>Rishi Sunak has conceded defeat in the UK general election, acknowledging that the Labour Party under Keir Starmer has won a decisive victory</p>
+        </div>
+        <script>
+            function showPopup(title, imageUrl, description) {
+                // Split description into paragraphs
+                const paragraphs = description.split('. ').map(p => `<p>${p}.</p>`).join('');
+            
+                // Create popup elements
+                const popup = document.createElement('div');
+                popup.classList.add('popup');
+                popup.innerHTML = `
+                    <div class="popup-content">
+                        <h2>${title}</h2>
+                        <img src="${imageUrl}" alt="${title}">
+                        ${paragraphs}
+                        <button onclick="closePopup()">Close</button>
+                    </div>
+                `;
+                document.body.appendChild(popup);
+            }
+            
+            function closePopup() {
+                const popup = document.querySelector('.popup');
+                if (popup) {
+                    document.body.removeChild(popup);
+                }
+            }
+            
+            // Popup styling
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .popup {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1000;
+                }
+                .popup-content {
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    text-align: center;
+                    max-width: 500px;
+                    width: 90%;
+                }
+                .popup-content img {
+                    max-width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+                .popup-content button {
+                    padding: 10px 20px;
+                    background: #333;
+                    color: #fff;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                .popup-content p {
+                    margin: 10px 0;
+                }
+            `;
+            document.head.appendChild(style);
+            
+        </script>
+<style>
+    .news-banner {
+        display: block;
+        background-color: #000000;
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        margin: 10px 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        width: calc(100% - 20px); /* Full width minus some margin */
+        margin: 10px auto; /* Center the banner horizontally */
+        max-width: 1200px; /* Adjust as needed */
+    }
+    
+    .news-banner img {
+        width: 100%;
+        height: 150px; /* Fixed height */
+        object-fit: cover; /* Ensure the image covers the entire area */
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .news-banner h2 {
+        margin: 10px 0 0;
+        font-size: 34px;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+    
+    .news-banner p {
+        margin: 10px 0 0;
+        font-size: 19px;
+        padding: 10px 0;
+    }
+    
+    .news-banner:hover {
+        background-color: #1d1b1b;
+    }
+    
+    
+</style>        
+        <div class="news-cards">
+            <div class="news-card" onclick="showPopup('Meta Threads Surpasses 175M Active Users', 'https://pplx-res.cloudinary.com/image/fetch/s--ktQ1O-AX--/t_limit/https://9to5mac.com/wp-content/uploads/sites/6/2023/07/instagram-threads-app.webp%3Fw%3D1600', 'Launched on July 5, 2023, Threads experienced meteoric growth, amassing 100 million users within its first week. This rapid adoption was facilitated by seamless integration with Instagram, allowing users to create Threads accounts effortlessly. The platforms user base continued to expand, reaching 150 million monthly active users by Q1 2024. Despite initial challenges in retaining early adopters, Threads has maintained steady growth, adding approximately 25 million users in the two months leading up to July 2024.Threads social media platform has surpassed 175 million monthly active users (MAU) in its first year since launch, according to CEO Mark Zuckerberg.123 This represents significant growth for the platform, which had over 150 million MAU as of February 2024. Threads was introduced in July 2023 as a competitor to X (formerly Twitter), and it quickly amassed 100 million users in its first week.3 The platforms seamless integration with Instagram, allowing users to easily create Threads accounts, played a key role in its rapid initial growth')">
+                <img src="https://pplx-res.cloudinary.com/image/fetch/s--ktQ1O-AX--/t_limit/https://9to5mac.com/wp-content/uploads/sites/6/2023/07/instagram-threads-app.webp%3Fw%3D1600" alt="News 1">
+                <h3>Meta's Threads Surpasses 175M Active Users</h3>
+                
+            </div>
+            <div class="news-card" onclick="showPopup('OpenAIs board as a non-voting observer', 'https://9to5mac.com/wp-content/uploads/sites/6/2024/02/Phil-Schiller-advances-to-apple-fellow_08042020_big.jpg.large_2x-2.jpg?quality=82&strip=all&w=1600', 'As part of Apple landmark agreement with OpenAI, Phil Schiller, the company App Store chief and former marketing executive, will assume a non-voting observer role on OpenAIs board. This position, set to commence later in 2024, will allow Schiller to attend and contribute to board meetings without voting rights or director powers. The arrangement mirrors Microsofts similar observer status, placing Apple on equal footing with its tech rival in OpenAIs governance structure')">
+                <img src="https://9to5mac.com/wp-content/uploads/sites/6/2024/02/Phil-Schiller-advances-to-apple-fellow_08042020_big.jpg.large_2x-2.jpg?quality=82&strip=all&w=1600" alt="News 2">
+                <h3>
+                    Apple to Observe on OpenAI's Board</h3>
+                
+            </div>
+            <div class="news-card" onclick="showPopup('UK General Election', 'https://static.toiimg.com/thumb/msid-111393211,imgsize-919185,width-400,resizemode-4/111393211.jpg', 'The UK is holding a general election today, with the main contenders being the incumbent Conservative Party and the Labour Party. The outcome is expected to be crucial for the country’s political future.')">
+                <img src="https://static.toiimg.com/thumb/msid-111393211,imgsize-919185,width-400,resizemode-4/111393211.jpg" alt="UK General Election">
+                <h3>UK General Election</h3>
+                
+            </div>
+            <div class="news-card" onclick="showPopup('Liberia Political Protests', 'https://www.aljazeera.com/wp-content/uploads/2019/06/8d9e3b7c70834860aa571f59be770d9b_18.jpeg?resize=770%2C513&quality=80', 'Liberian lawmakers recently drove a tricycle convoy to Capitol Hill in protest over delays in vehicle funds, highlighting ongoing political and social tensions in the country.')">
+                <img src="https://www.aljazeera.com/wp-content/uploads/2019/06/8d9e3b7c70834860aa571f59be770d9b_18.jpeg?resize=770%2C513&quality=80" alt="Liberia Political Protests">
+                <h3>Liberia Political Protests</h3>
+                
+            </div>
+            <div class="news-card" onclick="showPopup('Kenya Protests Continue', 'https://i.abcnewsfe.com/a/78b6a543-3771-415a-93a8-c568ac78fc43/wirestory_4f3389c9728a4db5c1cd5a91407a4c44_16x9.jpg?w=992', 'Protests against President William Ruto’s administration continue in Kenya, with recent demonstrations resulting in injuries and arrests amidst widespread dissatisfaction.')">
+                <img src="https://i.abcnewsfe.com/a/78b6a543-3771-415a-93a8-c568ac78fc43/wirestory_4f3389c9728a4db5c1cd5a91407a4c44_16x9.jpg?w=992" alt="Kenya Protests Continue">
+                <h3>Kenya Protests Continue</h3>
+                
+            </div>
+            <div class="news-card" onclick="showPopup('NOAA Hurricane Season Prediction', 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/a9e4/live/885c5cb0-1841-11ef-b29c-db4f2723162a.jpg', 'NOAA has predicted an above-normal Atlantic hurricane season this year, expecting 7-25 named storms, 8-13 hurricanes, and 4-7 major hurricanes due to various climatic factors.')">
+                <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/a9e4/live/885c5cb0-1841-11ef-b29c-db4f2723162a.jpg" alt="NOAA Hurricane Season Prediction">
+                <h3>NOAA Hurricane Season Prediction</h3>
+                
+            </div>
+
+            <div class="news-card" onclick="showPopup('European Union Climate Pact', 'https://efmc.eu/contentefmc2014/uploads/2020/06/0-1.jpg', 'The European Union has reached a historic climate pact aimed at achieving net-zero greenhouse gas emissions by 2050. This agreement involves significant commitments from member states to accelerate climate action and transition to renewable energy sources.')">
+                <img src="https://efmc.eu/contentefmc2014/uploads/2020/06/0-1.jpg" alt="European Union Climate Pact">
+                <h3>European Union Climate Pact</h3>
+            </div>
+            
+            <div class="news-card" onclick="showPopup('NASA Artemis Program Update', 'https://science.nasa.gov/wp-content/uploads/2023/04/hubble-nebula-orion-nebula-display-jpg.webp?w=1800', 'NASA Artemis program, aiming to return humans to the Moon by 2025, has announced successful tests of the Space Launch System and Orion spacecraft, marking significant progress toward lunar exploration.')">
+                <img src="https://science.nasa.gov/wp-content/uploads/2023/04/hubble-nebula-orion-nebula-display-jpg.webp?w=1800" alt="NASA Artemis Program Update">
+                <h3>NASA Artemis Program Update</h3>
+            </div>
+            
+            <div class="news-card" onclick="showPopup('Australia Cybersecurity Breach', 'https://live-production.wcms.abc-cdn.net.au/c1b2c8c0ce76e064a1a31942fb393afb?src', 'Australia has reported a significant cybersecurity breach affecting government and private sector entities, prompting urgent investigations and calls for enhanced digital security measures across the country.')">
+                <img src="https://live-production.wcms.abc-cdn.net.au/c1b2c8c0ce76e064a1a31942fb393afb?src" alt="Australia Cybersecurity Breach">
+                <h3>Australia Cybersecurity Breach</h3>
+            </div>
+            
+            <div class="news-card" onclick="showPopup('Tokyo Olympics 2024 Opening Ceremony', 'https://images.ctfassets.net/kftzwdyauwt9/5GdFkbDXwTGbFHCufuGiFq/cc0fc9bf1955ad7f05d1f0d3363da33b/Introducing_OpenAI_Japan.png?w=1920&q=90&fm=webp', 'The Tokyo Olympics 2024 have kicked off with a vibrant opening ceremony showcasing Japanese culture and resilience amid challenges posed by the COVID-19 pandemic. Athletes from around the world have gathered to compete in various sports events.')">
+                <img src="https://images.ctfassets.net/kftzwdyauwt9/5GdFkbDXwTGbFHCufuGiFq/cc0fc9bf1955ad7f05d1f0d3363da33b/Introducing_OpenAI_Japan.png?w=1920&q=90&fm=webp" alt="Tokyo Olympics 2024 Opening Ceremony">
+                <h3>Tokyo Olympics 2024 Opening Ceremony</h3>
+            </div>
+
+            <div class="news-card" onclick="showPopup('OpenAI pacts with QubeAI', 'https://images.ctfassets.net/kftzwdyauwt9/1U3hR241DgmPHuf39pZb40/43b389ae586192a2342cfa6995654d2b/image__1_.webp?w=640&q=90&fm=webp', 'OpenAI is ready to deal with QubeAI the founder of F\EXIBILITY.There are leaks that F\EXIBILITY with do grand relaunch with their new tool Discover X this can change the game for F\EXIBILTY and F\exibility may launch GPT-4o or F\exibility 2.5 Haiku.')">
+                <img src="https://images.ctfassets.net/kftzwdyauwt9/1U3hR241DgmPHuf39pZb40/43b389ae586192a2342cfa6995654d2b/image__1_.webp?w=640&q=90&fm=webp" alt="Tokyo Olympics 2024 Opening Ceremony">
+                <h3>The AI giants combine!</h3>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    <div class="footer">
+        Discover X is powered by F\EXIBILITY check out <a href="https://arcaii.github.io/flexibility/">these for more information.</a>.
+    </div>
+    <div class="bottom-bar">
+        <a href="#">Discover X</a>
+        <a href="https://arcaii.github.io/chat/">Chat</a>
+        <a href="https://discord.com/invite/ccwuBQdzPP">Community</a>
+    </div>
+
+    <!-- Overlay element -->
+    <div class="overlay" id="overlay"></div>
+
+    <div id="newsPopup" class="news-popup">
+        <button class="close-btn" onclick="hidePopup()">X</button>
+        <img id="popupImg" src="" alt="News">
+        <h3 id="popupTitle">News Title</h3>
+        <p id="popupDescription">Full description of the news.</p>
+    </div>
+
+    <script>
+        const title = document.getElementById('title');
+
+        document.addEventListener('mousemove', (event) => {
+            const rect = title.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+            const isInside = x >= 0 && y >= 0 && x <= rect.width && y <= rect.height;
+
+            if (isInside) {
+                title.classList.add('hovered');
+            } else {
+                title.classList.remove('hovered');
+            }
+        });
+
+        function showPopup(title, imgSrc, description) {
+            document.getElementById('popupTitle').textContent = title;
+            document.getElementById('popupImg').src = imgSrc;
+            document.getElementById('popupDescription').textContent = description;
+            document.getElementById('newsPopup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        }
+
+        function hidePopup() {
+            document.getElementById('newsPopup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+            document.body.style.overflow = ''; // Enable scrolling
+        }
+    </script>
+</body>
+</html>
