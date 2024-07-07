@@ -27,10 +27,11 @@
     <meta name="twitter:title" content="F\EXIBILITY"/>
     <meta name="twitter:description" content="We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems. Building safe and beneficial AGI is our mission."/>
     <meta name="twitter:image" content="https://images.playground.com/e7c04e0bb13b4c3aaf763763ade6565c.jpeg"/>
-
+    <link rel="stylesheet" href="styles.css">
     <meta name="twitter:image:width" content="1600"/>
     <meta name="twitter:image:height" content="900"/>
     <link rel="icon" href="fav.ico"/>
+
     <style>
         @font-face {
             font-family: 'GrokFont';
@@ -168,7 +169,7 @@
             border-radius: 10px;
             margin: 10px;
             padding: 20px;
-            width: 300px;
+            width: 330px;
             color: #bbb;
             transition: background-color 0.3s, transform 0.3s;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -192,9 +193,10 @@
         }
         
         .news-card h3 {
-            font-size: 1.2rem;
+            font-size: 1.6em;
             margin-bottom: 10px;
             color: #fff;
+            font-weight: lighter;
         }
         
         .news-card p {
@@ -227,14 +229,15 @@
             margin-bottom: 15px;
         }
         
-        .news-popup h1 {
-            font-size: 3rem; /* Increased font size */
+        .news-popup h3 {
+            font-size: 4rem; /* Increased font size */
             margin-bottom: 10px;
             color: #fff;
-        }
+            font-weight: lighter;
+            }
         
         .news-popup p {
-            font-size: 1rem;
+            font-size: 2rem;
             text-align: left;
             color: #bbb;
         }
@@ -269,7 +272,9 @@
             display: none;
         }
         
-        
+        .content p {
+            font-size: 2em;
+            }
         
     </style>
 </head>
@@ -279,9 +284,7 @@
         <img src="ai.png" alt="Logo">
         <span style="font-size: 1.5rem; font-family: 'GrokFont', sans-serif;">F\EXIBILITY</span>
         <a href="#"></a>
-        <a href="#">Blog</a>
-        <a href="#">About</a>
-        <a href="#">Careers</a>
+        
     </div>
     <h1 id="title">DISCX</h1>
     <div class="content">
@@ -289,12 +292,8 @@
     </div>
    
     <div class="news-section">
+        
        
-        <div class="news-banner" onclick="showPopup('Rishi Sunak Lost UK Election', 'https://cdn.bdnews24.com/bdnews24/media/english/imgAll/2024July/niko-omilana-050724-01-1720179915.jpg', 'According to the election results, the Labour Party is expected to win 410 seats, while Sunak Conservative Party is projected to win only 131 seats - the worst performance in the partys history.  Sunak has taken responsibility for the Conservatives loss and said he has called Keir Starmer to congratulate him. Sunak stated that Today, power will change hands in a peaceful and orderly manner, with goodwill on all sides. That is something that should give us all confidence in our country stability and future. He also expressed his gratitude to his constituents in Richmond and North Allerton, where he was re-elected as the local Member of Parliament. The election results represent a significant shift in British politics, with the Labour Party securing its largest victory since 1997 under Tony Blair.  Keir Starmer has promised a decade of national renewal after years of austerity, Brexit upheaval, and a cost-of-living crisis. ')">
-            <img src="https://cdn.bdnews24.com/bdnews24/media/english/imgAll/2024July/niko-omilana-050724-01-1720179915.jpg" alt="Rishi Sunak Lost UK Election">
-            <h2>Rishi Sunak Lost UK Election</h2>
-            <p>Rishi Sunak has conceded defeat in the UK general election, acknowledging that the Labour Party under Keir Starmer has won a decisive victory</p>
-        </div>
         <script>
             function showPopup(title, imageUrl, description) {
                 // Split description into paragraphs
@@ -367,7 +366,7 @@
 <style>
     .news-banner {
         display: block;
-        background-color: #000000;
+        background-color: #202222;
         color: #fff;
         padding: 10px;
         border-radius: 8px;
@@ -407,11 +406,55 @@
     
 </style>        
         <div class="news-cards">
-            <div class="news-card" onclick="showPopup('Meta Threads Surpasses 175M Active Users', 'https://pplx-res.cloudinary.com/image/fetch/s--ktQ1O-AX--/t_limit/https://9to5mac.com/wp-content/uploads/sites/6/2023/07/instagram-threads-app.webp%3Fw%3D1600', 'Launched on July 5, 2023, Threads experienced meteoric growth, amassing 100 million users within its first week. This rapid adoption was facilitated by seamless integration with Instagram, allowing users to create Threads accounts effortlessly. The platforms user base continued to expand, reaching 150 million monthly active users by Q1 2024. Despite initial challenges in retaining early adopters, Threads has maintained steady growth, adding approximately 25 million users in the two months leading up to July 2024.Threads social media platform has surpassed 175 million monthly active users (MAU) in its first year since launch, according to CEO Mark Zuckerberg.123 This represents significant growth for the platform, which had over 150 million MAU as of February 2024. Threads was introduced in July 2023 as a competitor to X (formerly Twitter), and it quickly amassed 100 million users in its first week.3 The platforms seamless integration with Instagram, allowing users to easily create Threads accounts, played a key role in its rapid initial growth')">
+
+            <div class="news-banner" onclick="showPopup('The First AI Winter', 'https://www.historyofdatascience.com/wp-content/uploads/2021/08/AI-Winter.jpg', 'The first AI Winter, a period of diminished funding and enthusiasm for artificial intelligence, occurred in the mid-1970s. Several factors contributed to this decline, including the limitations of early AI systems, the high costs of research and development, and the unrealistic expectations that had been raised by early successes in the field. As a result, funding for AI research dried up, and many researchers abandoned the field. The AI Winter had a significant impact on the development of AI, and it took several years for the field to recover. However, the lessons learned from the AI Winter have helped to shape the development of AI today, and the field is now more mature and realistic about what AI can and cannot achieve.')">
+                <img src="https://www.historyofdatascience.com/wp-content/uploads/2021/08/AI-Winter.jpg" alt="Rishi Sunak Lost UK Election">
+                <h2>The First AI Winter</h2>
+                <p>The first AI winter, spanning from 1974 to 1980, marked a significant period of reduced funding and interest in artificial intelligence research. This downturn followed an era of high expectations and optimism in the 1950s and 1960s</p>
+            </div>
+    
+
+            <div class="news-card" onclick="showPopup('AI Reads Images from Thoughts', 'https://images.newscientist.com/wp-content/uploads/2017/09/13104112/gettyimages-523018672.jpg', 'Recent advancements in artificial intelligence have enabled researchers to reconstruct images from human brain activity, effectively reading visual thoughts. This groundbreaking technology combines sophisticated AI models with neuroimaging techniques like functional magnetic resonance imaging (fMRI) to interpret and recreate visual experiences based on brain scans. While still in early stages, this intersection of neuroscience and AI holds promise for applications in medical communication, cognitive research, and understanding visual perception.')">
+                <img src="https://images.newscientist.com/wp-content/uploads/2017/09/13104112/gettyimages-523018672.jpg" alt="News 2">
+                <h3>
+                    AI Reads Images from Thoughts</h3>
+                
+            </div>
+
+            <div class="news-card" onclick="showPopup('The Early Days of Amazon', 'https://assets.aboutamazon.com/dims4/default/a9d60d4/2147483647/strip/true/crop/2550x1434+0+0/resize/1320x742!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Fbb%2Fe2%2Fc16ac25c4060a3579d8a809badd7%2Finline-014-amazon-bezos-deliveringthefuture-z9a4726-copy.JPG', 'In the twilight of the 20th century, as the nascent embers of the internet flickered into existence, Amazon emerged as an unassuming online bookstore named Cadabra. Founded in 1994 by an ambitious entrepreneur, Jeff Bezos, from the confines of his Seattle garage, Amazons humble beginnings masked the seeds of its future dominance in the digital realm. Bezos, driven by an unwavering customer-centric philosophy and an acute understanding of technologys transformative potential, steered Amazon away from the traditional brick-and-mortar model. Instead, he embraced the boundless possibilities of e-commerce, offering books at competitive prices with unparalleled convenience. Amazons relentless pursuit of customer satisfaction and its innovative approach to online retailing swiftly propelled it to the forefront of the emerging industry.As the popularity of e-commerce soared, Amazon deftly navigated the digital landscape. It expanded its product offerings beyond books, venturing into electronics, clothing, home goods, and a myriad of other categories. Amazon commitment to customer convenience and its meticulous attention to the shopping experience became its unwavering guiding principles.')">
+                <img src="https://assets.aboutamazon.com/dims4/default/a9d60d4/2147483647/strip/true/crop/2550x1434+0+0/resize/1320x742!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Fbb%2Fe2%2Fc16ac25c4060a3579d8a809badd7%2Finline-014-amazon-bezos-deliveringthefuture-z9a4726-copy.JPG" alt="News 1">
+                <h3>The Early Days of Amazon</h3>
+                
+            </div>
+
+           
+            <div class="news-card" onclick="showPopup('OpenAIs board as a non-voting observer', 'https://embed-ssl.wistia.com/deliveries/15db24e0e392ab6640169c6076a230a01bf48204.webp?image_crop_resized=1280x768', 'Runways Gen-3 Alpha model, now publicly accessible as of July 1, 2024, represents a significant leap in AI-driven video generation. Available to anyone with a paid subscription starting at $12 per month, this advanced model offers high-fidelity, consistent, and controllable video creation from text, image, or video prompts, making it an invaluable tool for filmmakers, content creators, and other creative professionals.')">
+                <img src="https://embed-ssl.wistia.com/deliveries/15db24e0e392ab6640169c6076a230a01bf48204.webp?image_crop_resized=1280x768" alt="News 2">
+                <h3>
+                    Runway Gen-3 Opens to Public</h3>
+                
+            </div>
+            
+        <div class="news-banner" onclick="showPopup('Rishi Sunak Lost UK Election', 'https://cdn.bdnews24.com/bdnews24/media/english/imgAll/2024July/niko-omilana-050724-01-1720179915.jpg', 'According to the election results, the Labour Party is ex         pected to win 410 seats, while Sunak Conservative Party is projected to win only 131 seats - the worst performance in the partys history.  Sunak has taken responsibility for the Conservatives loss and said he has called Keir Starmer to congratulate him. Sunak stated that Today, power will change hands in a peaceful and orderly manner, with goodwill on all sides. That is something that should give us all confidence in our country stability and future. He also expressed his gratitude to his constituents in Richmond and North Allerton, where he was re-elected as the local Member of Parliament. The election results represent a significant shift in British politics, with the Labour Party securing its largest victory since 1997 under Tony Blair.  Keir Starmer has promised a decade of national renewal after years of austerity, Brexit upheaval, and a cost-of-living crisis. ')">
+            <img src="https://cdn.bdnews24.com/bdnews24/media/english/imgAll/2024July/niko-omilana-050724-01-1720179915.jpg" alt="Rishi Sunak Lost UK Election">
+            <h2>Rishi Sunak Lost UK Election</h2>
+            <p>Rishi Sunak has conceded defeat in the UK general election, acknowledging that the Labour Party under Keir Starmer has won a decisive victory</p>
+        </div>
+
+            <div class="news-card" onclick="showPopup('Dark day for Prtugal', 'https://assets.goal.com/images/v3/bltc9376b4a6073a0cb/Ronaldo%20Felix%20Portugal%20GFX.jpg?auto=webp&format=pjpg&quality=60&width=3840', 'Cristiano Ronaldo bid to win the European Championship with Portugal came to an end as France defeated Portugal 5-3 in a penalty shootout on July 6, 2024. The match was a defensive struggle with both teams unable to score from open play, leading to the decisive penalty shootout. Ronaldo performance was marked by his inability to score despite having several chances, and he ultimately ended his sixth and final European Championship without a goal. The loss marked the end of Ronaldo international career, and he was seen leaving the tunnel in tears after the match. France, on the other hand, advanced to the semifinals where they will face Spain, showcasing their strength in penalty kicks')">
+                <img src="https://www.telegraph.co.uk/content/dam/football/2024/07/05/TELEMMGLPICT000384583395_17202160506550_trans_NvBQzQNjv4Bqps_k3VgYop_8ozJIU0USXGgFxYCGVTZuSLNUqv38ioU.jpeg?imwidth=680" alt="News 2">
+                <h3>
+                    Portugal lost 3-5 in penalties, Crisitano Ronaldo consoles Pepe </h3>
+                
+            </div>
+
+            <div class="news-card" onclick="showPopup('Meta Threads Surpasses 175M Active Users', 'https://pplx-res.cloudinary.com/image/fetch/s--ktQ1O-AX--/t_limit/https://9to5mac.com/wp-content/uploads/sites/6/2023/07/instagram-threads-app.webp%3Fw%3D1600', 'Launched on July 5, 2023, Threads experienced meteoric growth, amassing 100 million users within its first week. This rapid adoption was facilitated by seamless integration with Instagram, allowing users to create Threads accounts effortlessly. The platforms user base continued to expand, reaching 150 million monthly active users by Q1 2024. Despite initial challenges in retaining early adopters, Threads has maintained steady growth, adding approximately 25 million users in the two months leading up to July 2024.                      Threads social media platform has surpassed 175 million monthly active users (MAU) in its first year since launch, according to CEO Mark Zuckerberg.123 This represents significant growth for the platform, which had over 150 million MAU as of February 2024. Threads was introduced in July 2023 as a competitor to X (formerly Twitter), and it quickly amassed 100 million users in its first week.3 The platforms seamless integration with Instagram, allowing users to easily create Threads accounts, played a key role in its rapid initial growth')">
                 <img src="https://pplx-res.cloudinary.com/image/fetch/s--ktQ1O-AX--/t_limit/https://9to5mac.com/wp-content/uploads/sites/6/2023/07/instagram-threads-app.webp%3Fw%3D1600" alt="News 1">
                 <h3>Meta's Threads Surpasses 175M Active Users</h3>
                 
             </div>
+
+           
             <div class="news-card" onclick="showPopup('OpenAIs board as a non-voting observer', 'https://9to5mac.com/wp-content/uploads/sites/6/2024/02/Phil-Schiller-advances-to-apple-fellow_08042020_big.jpg.large_2x-2.jpg?quality=82&strip=all&w=1600', 'As part of Apple landmark agreement with OpenAI, Phil Schiller, the company App Store chief and former marketing executive, will assume a non-voting observer role on OpenAIs board. This position, set to commence later in 2024, will allow Schiller to attend and contribute to board meetings without voting rights or director powers. The arrangement mirrors Microsofts similar observer status, placing Apple on equal footing with its tech rival in OpenAIs governance structure')">
                 <img src="https://9to5mac.com/wp-content/uploads/sites/6/2024/02/Phil-Schiller-advances-to-apple-fellow_08042020_big.jpg.large_2x-2.jpg?quality=82&strip=all&w=1600" alt="News 2">
                 <h3>
@@ -472,6 +515,196 @@
             
         </div>
     </div>
+    <style>
+        .container {
+            max-width: 1900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #000;
+          }
+          .search-bar {
+            position: relative;
+            margin-bottom: 20px;
+          }
+          .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background-color: #333;
+            color: #fff;
+            padding-left: 40px;
+            font-size: 16px;
+          }
+          .search-bar .icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+          }
+          .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+          }
+          .tabs div {
+            padding: 10px 20px;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+          }
+          .tabs .active {
+            border-color: #1DA1F2;
+          }
+          .scoreboard {
+            width: calc(100% + 40px);
+            margin: 0 -20px 20px -20px;
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+          }
+          .scoreboard h2 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+          }
+          .scoreboard .match {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 0;
+            border-radius: 10px;
+          }
+          .scoreboard .match:last-child {
+            margin-bottom: 0;
+          }
+          .scoreboard .team {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            color: #fff;
+            width: 100%;
+            justify-content: space-between;
+          }
+          .scoreboard .team img {
+            width: 30px;
+            height: 20px;
+            margin-right: 10px;
+          }
+          .scoreboard .team .name {
+            font-size: 18px;
+            font-weight: bold;
+          }
+          .scoreboard .team.portugal {
+            background-color: #d62828;
+            width: 170%;
+            text-align: left;
+          }
+          .scoreboard .team.france {
+            background-color: #0057e7;
+            width: 170%;
+            text-align: left;
+          }
+          .scoreboard .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            padding: 0 20px; /* Increased padding for the score */
+          }
+          .trending {
+            width: calc(100% + 40px);
+            margin: 0 -20px;
+            background-color: #000000;
+            padding: 30px; /* Increased padding */
+            border-radius: 10px;
+            margin-top: 20px;
+          }
+          .trending h3 {
+            margin: 0;
+            margin-bottom: 20px; /* Increased margin */
+            font-size: 24px; /* Increased font size */
+            color: #1DA1F2; /* Changed color */
+            padding-bottom: 10px; /* Added padding */
+            border-bottom: 2px solid #1DA1F2; /* Added bottom border */
+          }
+          .trending .item {
+            padding: 15px 0; /* Increased padding */
+            border-bottom: 1px solid #010103;
+            border-bottom: 1px solid #333; /* Added line between items */
+          }
+          .trending .item:last-child {
+            border-bottom: none;
+          }
+          .trending .item .category {
+            font-size: 16px; /* Increased font size */
+            color: #888;
+          }
+          .trending .item .topic {
+            font-size: 20px; /* Increased font size */
+            font-weight: bold;
+          }
+          .trending .item .posts {
+            font-size: 20px; /* Increased font size */
+            color: #888;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          
+          <div class="tabs">
+            <div class="active">For you</div>
+            <div>Trending</div>
+            <div>News</div>
+            <div>Sports</div>
+            <div>Entertainment</div>
+          </div>
+          <div class="scoreboard">
+            <h2>UEFA European Championship</h2>
+            <div class="match">
+              <div class="team portugal">
+                <img src="https://flagcdn.com/w20/pt.png" alt="Portugal">
+                <div class="name">Portugal</div>
+                <div class="score">0 (3)</div>
+              </div>
+            </div>
+            <div class="match">
+              <div class="team france">
+                <img src="https://flagcdn.com/w20/fr.png" alt="France">
+                <div class="name">France</div>
+                <div class="score">0 (5)</div>
+              </div>
+            </div>
+          </div>
+          <div class="trending">
+            <h3>Trending</h3>
+            <div class="item">
+              <div class="category">Trending in Motorsport</div>
+              <div class="topic">Ricciardo</div>
+              <div class="posts">4,365 posts</div>
+            </div>
+            <div class="item">
+              <div class="category">Trending in India</div>
+              <div class="topic">#AliaBhatt</div>
+              <div class="posts">5,028 posts</div>
+            </div>
+            <div class="item">
+              <div class="category">Trending in India</div>
+              <div class="topic">#KillReview</div>
+              <div class="posts">5,356 posts</div>
+            </div>
+            <div class="item">
+              <div class="category">Trending in India</div>
+              <div class="topic">ARRESTED</div>
+              <div class="posts">150K posts</div>
+            </div>
+          </div>
+        </div>
+      </body>
+   
     <div class="footer">
         Discover X is powered by F\EXIBILITY check out <a href="https://arcaii.github.io/flexibility/">these for more information.</a>.
     </div>
